@@ -1,0 +1,206 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ourPracticesHead {
+    background-image: url("https://static1.squarespace.com/static/587ce565ff7c50c9f5f58201/t/587e419e9de4bb54956f61c7/1486548179602/?format=750w");
+    background-position-x: center;
+    background-position-y: center; /* somehow it should scroll slower */
+    background-size: 1900px;
+    background-position-y: -170px;
+}
+
+header {
+    margin: -10px 0 0 0;
+    border: 0; /* Why is there still an outline? */
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header img{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.logo {
+    display: inline;
+}
+
+header ul {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+header li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.pageTitle {
+    padding: 165px 0;
+}
+
+h1 {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    font-size: 52px;
+    line-height: 71px;
+    font-weight: 100;
+    max-width: 900px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #454545;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 100px auto 30px auto;
+    width: 75%;
+    max-width: 800px;
+}
+
+.bio {
+    text-align: center;
+    margin: 0 auto 15px auto;
+    width: 75%;
+    max-width: 800px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+h3 {
+    text-transform: uppercase;
+    border: solid 2px rgb(22,55,82);
+    width: 55%;
+    height: auto;
+    text-align: center;
+    margin: 30px auto 30px auto;
+    padding: 13px 30px;
+    line-height: 13px;
+    margin-top: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+h3:hover {
+    background-color: rgb(22,55,82);
+    color: white;
+}
+
+p {
+    color: #454545;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+
+body a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(22,55,82);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 13px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: (4, auto);
+    grid-gap: 35px;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.box {
+    display: inline-block;
+    max-width: 250px;
+    vertical-align: top;
+}
+
+.imgContainer {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.box img{
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+}
+
+
+router-outlet { 
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+footer h2 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.footGrid {
+    display: grid;
+    grid-template-columns: 525px 525px;
+    justify-content: center;
+}
+
+.address {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p a{
+    line-height: 13px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
+    text-decoration: underline;
+}

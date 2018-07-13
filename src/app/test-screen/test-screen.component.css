@@ -1,0 +1,274 @@
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+}
+  
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+  
+.parallax__layer--back {
+    
+    transform: translateZ(-.4px) scale(1.4);
+}
+  /* scale factor can be calculated with "1 + (translateZ * -1) / perspective". For example, if our viewport perspective is set to 1x
+  and we translate an element -2px along the Z axis the correction scale factor would be 3.*/
+
+.parallax__layer--deep {
+    transform: translateZ(-2px) scale(3);
+}
+
+.parallax_group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paraImage {
+    position: relative;
+    top: -130px;
+}
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding-top: 25px;
+}
+
+header {
+    margin: -10px 0 0 0;
+    border: 0; /* Why is there still an outline? */
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header img{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.logo {
+    display: inline;
+}
+
+header ul {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+header li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.pageTitle {
+    padding: 165px 0 0 0;
+}
+
+/* SCROLL BUTTON STUFF */
+
+.scrollButton {
+    width: 80px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    border: solid black 3px;
+}
+
+img .scrollButton {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+.scrollButton img:hover {
+    bottom: 10px;
+}
+
+/* END OF SCROLL BUTTON STUFF */
+
+h1 {
+    margin: 1rem auto 0rem auto;
+    text-align: center;
+    font-size: 52px;
+    line-height: 71px;
+    font-weight: lighter;
+    max-width: 900px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #454545;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 100px auto 30px auto;
+    width: 75%;
+    max-width: 800px;
+}
+
+.bio {
+    text-align: center;
+    margin: 0 auto 15px auto;
+    width: 75%;
+    max-width: 800px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+h3 {
+    border: solid 2px rgb(22,55,82);
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+h3:hover {
+    background-color: rgb(22, 55, 82);
+    color: white;
+}
+
+p {
+    color: #454545;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.button {
+    text-transform: uppercase;
+    color: rgb(22,55,82);
+    text-decoration: none;
+    width: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 330px 330px 330px; /* this should be the max but how do I set that? */
+    grid-gap: 35px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.box {
+    display: inline-block;
+    max-width: 330px;
+    vertical-align: top;
+}
+
+.imgContainer {
+    position: relative;
+    overflow: hidden;
+    height: 330px;
+}
+
+.box img{
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+    margin: auto;
+}
+
+
+router-outlet { 
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+.show {
+    visibility: visible;
+}
+
+footer h2 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.footGrid {
+    display: grid;
+    grid-template-columns: 525px 525px;
+    justify-content: center;
+}
+
+.address {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p a{
+    line-height: 13px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
+    text-decoration: underline;
+}

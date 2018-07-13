@@ -1,0 +1,144 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactHead {
+    background-image: url("https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/02/10/103378560-GettyImages-588095509.jpg?v=1526569372");
+    background-position-x: center;
+    background-position-y: center; /* somehow it should scroll slower */
+    background-size: 1900px;
+}
+
+
+header {
+    margin: -10px 0 0 0;
+    border: 0; /* Why is there still an outline? */
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header img{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.logo {
+    display: inline;
+}
+
+header ul {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+header li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.pageTitle {
+    padding: 165px 0 100px 0;
+}
+
+h1 {
+    margin: 1rem auto 3rem auto;
+    text-align: center;
+    font-size: 52px;
+    line-height: 71px;
+    font-weight: lighter;
+    max-width: 900px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: #171717;
+    text-align: center;
+    margin: 90px auto 20px auto;
+    font-weight: 100;
+    max-width: 820px;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: normal;
+    color: 171717;
+    border-bottom: #ffb6ab solid 1px;
+    margin: 0 auto 40px auto;
+    max-width: 850px;
+    padding-bottom: 40px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 20px;
+    display: inline;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.caption {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
+.goHome {
+    background-image: url("https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5372421939001_5371358890001-vs.jpg?pubId=5104226627001&videoId=5371358890001");
+    background-position-x: center;
+    background-position-y: center; /* somehow it should scroll slower */
+    background-size: 1900px;
+    background-position-y: -200px;
+    width: 100%;
+    text-align: center;
+}
+
+.goHome a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    line-height: 400px;
+    font-weight: lighter;
+    width: 800px;
+    text-align: center;
+    padding-bottom: 0px;
+    border-bottom: white solid 1px;
+}
+
+.goHome a:hover {
+    color: rgba(255,255,255,.5)
+}

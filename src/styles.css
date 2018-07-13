@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+router-outlet { 
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+footer h2 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.footGrid {
+    display: grid;
+    grid-template-columns: 525px 525px;
+    justify-content: center;
+}
+
+.address {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p a{
+    line-height: 13px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
+    text-decoration: underline;
+}

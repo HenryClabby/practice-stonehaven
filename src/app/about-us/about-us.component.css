@@ -1,0 +1,271 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutUsHead {
+    background-image: url("https://static1.squarespace.com/static/587ce565ff7c50c9f5f58201/t/5889cb659de4bb99f28c68df/1486548187448/ravwym3xk7y-adam-birkett.jpg");
+    background-position-x: center;
+    background-position-y: -270px; /* somehow it should scroll slower */
+    background-size: 1900px;
+}
+
+
+/* Might use this later */
+.background-element {
+    -webkit-transform: translateZ(-999px) scale(2);
+    transform: translateZ(-999px) scale(2);
+    z-index: -100;
+}
+
+header {
+    margin: -10px 0 0 0;
+    border: 0; /* Why is there still an outline? */
+    padding: 0;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.headGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header img{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+
+.logo {
+    display: inline;
+}
+
+header ul {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+header li {
+    display: inline;
+    margin-left: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.pageTitle {
+    padding: 165px 0 100px 0;
+}
+
+h1 {
+    margin: 1rem auto 3rem auto;
+    text-align: center;
+    font-size: 52px;
+    line-height: 71px;
+    font-weight: lighter;
+    max-width: 900px;
+}
+
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    line-height: 40px;
+    border: none;
+    font-weight: normal;
+    text-transform: none;
+    display: block;
+    height: auto;
+    width: 80%;
+}
+
+h2 {
+    font-size: 52px;
+    line-height: 71px;
+    font-weight: lighter;
+    color: #171717;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    width: 900px; 
+    border-top: #ffb6ab solid 1px;
+    margin-bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    color: #454545;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.gridText {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    justify-content: center;
+}
+
+.box {
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.name {
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.position {
+    color: gray;
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.nametag {
+    display: none;
+}
+
+a:hover + .nametag {
+    visibility: visible;
+    display: block;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    position: absolute;
+    bottom:16px;
+}
+
+.nametag:hover {
+    display: block;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    position: absolute;
+    bottom:16px;
+}
+
+.gridPeople {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: repeat(3,auto);
+    grid-column-gap: 35px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.person {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.person img{
+    width: 100%;
+    height: 100%;
+}
+
+body a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(22,55,82);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.practices {
+    background-image: url("https://static1.squarespace.com/static/587ce565ff7c50c9f5f58201/t/5889cb659de4bb99f28c68df/1486548187448/ravwym3xk7y-adam-birkett.jpg");
+    background-position-x: center;
+    background-position-y: center; /* somehow it should scroll slower */
+    background-size: 1900px;
+    width: 100%;
+    text-align: center;
+}
+
+.practices a {
+    text-transform: uppercase;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    line-height: 400px;
+    font-weight: lighter;
+    width: 800px;
+    text-align: center;
+    padding-bottom: 0px;
+    border-bottom: white solid 1px;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.practices a:hover {
+    color: rgba(255,255,255,.5);
+    border-bottom: rgba(255,255,255,.5) solid 1px;
+}
+
+router-outlet { 
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: #EEEEEE;
+}
+
+footer h2 {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.footGrid {
+    display: grid;
+    grid-template-columns: 525px 525px;
+    justify-content: center;
+}
+
+.address {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer p a{
+    line-height: 13px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0;
+    text-decoration: underline;
+}

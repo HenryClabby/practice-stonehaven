@@ -1,0 +1,82 @@
+
+<!--Put these in one container with the img background-->
+<header class="aboutUsHead">
+    <div class=headGrid>
+      <!--Logo-->
+      <div class=logo>
+        <img width="280" alt="Stonehaven Logo" src="https://static1.squarespace.com/static/587ce565ff7c50c9f5f58201/t/5890acdc59cc68806c8e7162/1527083687257/?format=1500w">
+      </div>
+  
+      <!--Links-->
+      <ul>
+        <li>
+          <a routerLink="/app-home">Home </a>
+        </li>
+        <li>
+          <a routerLink="/app-aboutUs"> About Us </a>
+        </li>
+        <li>
+          <a routerLink="/app-ourPractices"> Our Practices </a>
+        </li>
+        <li>
+          <a routerLink="/app-contact"> Contact </a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class=pageTitle>
+      <h1>Identifying leadership to help you thrive.</h1>
+    </div>
+  </header>
+  
+  <!--Put the following in perhaps a body container with the eggshell background-->
+  <body>
+    <div class="gridText">
+      <div class="box">
+      <h3>
+        We're an independent executive search company with a global reach into mature and emerging markets.
+      </h3>
+      </div>
+
+      <div class="box">
+      <p>Think of us as the antidote to the increasingly commoditised and transactional search marketplace.</p>
+      <p>A senior team that provides genuine value through experience, insight and research. We help clients deliver their business strategy and 
+        longer-term potential through strategic partnership, rather than short-term, transactional thinking.</p>
+      <p>Drawn from diverse backgrounds and industry specialisations, our global team has consistently proven its expertise in shaping opinion, 
+        creating perspective and challenging conventional thinking around the talent agenda.</p>
+      <p>If we had a mantra, it would read: relentless in the pursuit of outcome, accountable for performance, constantly challenging thinking, 
+        responsive to timelines and always fair on fees.</p>
+      <p>Our practices span Board, Financial Services, Industrial, Retail and Commercial, Digital and Technology, Professional Services and Not 
+        For Profit. This is complemented by domain excellence in core corporate functions.</p>
+      </div>
+    </div>
+    <!--Orange line-->
+
+
+    <!--Definitely should ng repeat on this for a 2D array of names, titles, and img's-->
+    <h2>
+      Our people
+    </h2>
+    <div class="gridPeople">
+      <div *ngFor="let person of gridPeople">
+        <div class="person">
+          <a routerLink="/app-aboutUs"><img src={{person.picture}}></a>
+          <div class="nametag">
+            <p class="name">
+              {{person.name}}
+            </p>
+            <p class="position">
+              {{person.position}}
+            </p>
+          </div>
+        </div>
+      </div>      
+      
+    </div>
+    <div class="practices">
+        <a routerLink="/app-ourPractices">See our practices</a>
+    </div>
+
+  
+  </body>
+  
